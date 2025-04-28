@@ -46,19 +46,6 @@ The prototype is designed to be implemented in the retail industry for different
 | **Libraries**| Dlib|OpenCV|Keras<br>TensorFlow |Scikit Learn |
 |**Language**| Python|Python|Python|Python|
 
-## Results
-[Left] System detected new customer face at promotion booth and shows the estimated gender, age and emotion.
-<br>[Right] Video shows how a known customer is being identified and how his emotion is being tracked. 
-
-<img src="https://github.com/rileykwok/Face-Recognition-Model-with-Gender-Age-and-Emotions-Estimations/blob/master/sample/promotion1.png" width="300" height="300">       <img src="https://github.com/rileykwok/Face-Recognition-Model-with-Gender-Age-and-Emotions-Estimations/blob/master/sample/supermarket.gif" width="300">
-
-
-We have trained the system on some celebrities and some of our friends, we noted that in some cases that the 2 face vectors of 2 different people were even located closer then each other (euclidean distance) than two photos of one person. From what we tested, using 5+ photos per person with clean, clear, front facing faces would produce better results for identity estimates. 
-
-The SVM classifier is also prefered over KNN classifier as they produce slightly better estimation. It also provides a confidence score per estimate which allows us to set a threshold to categorize known or new faces. The confidence score threshold we experimented that works best is 0.3.
-
-<img src="https://github.com/rileykwok/Face-Recognition-Model-with-Gender-Age-and-Emotions-Estimations/blob/master/sample/visualisation-t-SNE.png" width="500">
-
 ## References
 Face Detection: [DLib](http://dlib.net/)
 <br>Face Alignment: [OpenCV:](https://opencv.org/)
